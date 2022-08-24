@@ -40,9 +40,46 @@ article {
     transform: all .2s linear;
 }
 
+#dog_btn:active {
+    transform: scale(0.9);
+    transform: all .2s linear;
+}
+
 #dog_result {
     width: 20rem;
     height: 20rem;
     background-image: none;
     background-size: cover;
+}
+
+.container-btn {
+    position: relative;
+}
+
+.btn-msg {
+    display: none;
+    width: 200%;
+    height: 50px;
+    position: absolute;
+    top: -80%;
+    left: -50%;
+    padding: 1rem;
+    color: #fff;
+    background-color: #011453;
+    font-weight: 700;
+    font-family: monospace;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.btn-msg::after {
+    content: "";
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    border-radius: 0 0 5px 0;
+    background-color: #011453;
 }
